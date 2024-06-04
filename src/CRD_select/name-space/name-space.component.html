@@ -1,0 +1,22 @@
+<div class="box">
+        <div class="scroll-div">
+            <h1 style="color: aliceblue; margin-left: 35%;">NameSpace</h1>
+            <div class="scroll-object">
+                <form (ngSubmit)="onSubmit()">
+                    <div>
+                        <h1 for="NameSpace" class="labels">Name</h1>
+                        <input type="text" id="namespacename" [(ngModel)]="namespace.metadata.name" required>
+                    </div>
+                    <h1>Add Labels</h1>
+                    <div *ngFor="let label of namespace.metadata.labels | keyvalue">
+                        <input type="text" [(ngModel)]="label.key" placeholder="Key">
+                        <input type="text" [(ngModel)]="label.value" placeholder="Value">
+                        <!-- <button type="button" (click)="removeLabel(label.key)">Remove Label</button><br><br> -->
+                      </div>
+                      <button type="button" (click)="addLabel()">Add Label</button><br><br>
+                    <button type="button" class="btn btn-success">Submit</button>
+                </form>
+            </div>
+        </div>
+</div>
+

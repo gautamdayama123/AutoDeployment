@@ -1,0 +1,32 @@
+.box{  
+    position: fixed;
+    background-color: gray;
+    height: 85%;
+    top: 50px;
+    left: 300px;
+    width: 50%;
+    padding: 20px ;
+    border: 2px solid rgb(119, 119, 119);
+    border-radius: 20px;
+}
+
+.scroll-div{
+    background: rgb(111, 110, 110);
+    overflow: hidden;
+    height: 95%;
+    border-radius: 20px;
+}
+
+.scroll-object{
+    color: aliceblue;
+    font-family: cursive;
+    font-size: 15px;
+    padding: 20px;
+}
+
+button{
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+    margin-left: 90%;
+}
